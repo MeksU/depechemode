@@ -1,0 +1,255 @@
+@font-face{
+    font-family: 'czcionka';
+    src: url(fonts/Typodermic%20-%20ChineseRocksRg-Regular.otf);
+}
+
+@font-face{
+    font-family: 'Montserrat-thin';
+    src: url(fonts/Montserrat-Thin.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(style/fonty/Montserrat-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Montserrat-thin', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#background{
+    background-image: url(img/tlo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header{
+	background: black;
+	width: 100%;
+	height: 76px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid white;
+}
+
+#logo{
+    height: 73px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+}
+
+nav{
+    float: right;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+	float: left;
+}
+
+#menu-icon{
+	background: url(img/menu-icon.png) no-repeat center;
+	display: hidden;
+	width: 52px;
+	height: 75px;
+}
+
+.menu{
+    margin-right: 21px;
+    margin-top: 21px;
+    font-size: 27px;
+    display: inline-block;
+    color: white;
+    transition: 0.5s all;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'czcionka';
+    letter-spacing: 2px;
+}
+
+.menu:hover{
+    transform: scale(1.15, 1.15);
+    color: red;
+    transition: 0.5s all;
+}
+
+#nic{
+    width: 100%;
+    height: 92vh;    
+}
+
+#nic2{
+    width: 100%;
+    height: 150px;    
+}
+
+#nic3{
+    width: 100%;
+    height: 20px;    
+}
+
+#albums{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15%;
+    padding-right: 15%;
+    min-height: 800px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+    border-radius: 20px;
+}
+
+#utwory{
+    padding: 15px;
+    text-align: center;
+    min-height: 200px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+    border-radius: 20px;
+}
+
+p{
+    padding-bottom: 15px;
+}
+
+.albumimg{
+    border: 1px solid white;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    z-index: 10;
+    position: absolute;
+    transition: all 0.7s;
+}
+
+.albumimg:hover{
+    transform: scale(6, 6);
+    transition: all 1s;
+    z-index: 1000;
+}
+
+h1{
+    font-variant: small-caps;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer{
+    font-size: 80%;
+    padding-top: 1%;
+    text-align: center;
+    clear: both;
+    background: rgba(0, 0, 0, 0.89);
+    font-weight: bold;
+}
+
+.muzyka{
+    padding-bottom: 8px;
+}
+
+audio{
+    margin-left: 15px;
+    height: 23px;
+    width: 235px;
+    margin-bottom: 15px;
+    transition: all 0.4s;
+}
+
+audio:hover, audio:focus, audio:active{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all 0.4s;
+}
+
+
+
+@media only screen and (max-width: 970px) {
+	header {
+		position: absolute;
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 6px;
+		background: #c5c5c5;
+        right: 0px;
+		top: 76px;
+		width: 100%;
+	}
+	nav:hover ul {
+		display: block;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding-bottom: 15px;
+		margin: 0;
+	}
+    #logo{
+        height: auto;
+        max-height: 73px;
+        width: auto;
+        max-width: 75%;
+        float: left;
+        margin-left: 10px;
+    }
+    body{
+        font-size: 13px;
+    }
+    #background{
+        background-image: url(img/tlo3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+    #nic{
+        width: 100%;
+        height: 90vh;    
+    }
+    #albums{
+        min-height: 600px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    body{
+        font-size: 10px;
+    }
+}

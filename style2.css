@@ -1,0 +1,338 @@
+@font-face{
+    font-family: 'czcionka';
+    src: url(fonts/Typodermic%20-%20ChineseRocksRg-Regular.otf);
+}
+
+@font-face{
+    font-family: 'Montserrat-thin';
+    src: url(fonts/Montserrat-Thin.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(style/fonty/Montserrat-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Montserrat-thin', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+#background{
+    background-image: url(img/tlo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header{
+	background: black;
+	width: 100%;
+	height: 76px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid white;
+}
+
+#logo{
+    height: 73px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+}
+
+nav{
+    float: right;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+	float: left;
+}
+
+#menu-icon{
+	background: url(img/menu-icon.png) no-repeat center;
+	display: hidden;
+	width: 52px;
+	height: 75px;
+}
+
+.menu{
+    margin-right: 21px;
+    margin-top: 21px;
+    font-size: 27px;
+    display: inline-block;
+    color: white;
+    transition: 0.5s all;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'czcionka';
+    letter-spacing: 2px;
+}
+
+.menu:hover{
+    transform: scale(1.15, 1.15);
+    color: red;
+    transition: 0.5s all;
+}
+
+#nic{
+    width: 100%;
+    height: 92vh;    
+}
+
+.nic2{
+    width: 100%;
+    height: 15px;
+    background: rgba(130, 0, 0, 0.85);
+}
+
+#nic3{
+    width: 100%;
+    height: 20px;    
+}
+
+#czlonkowie{
+    padding: 15px;
+    min-height: 30px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#byli{
+    margin-top: 100px;
+    padding: 15px;
+    min-height: 30px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#gahan{
+    min-height: 530px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+}
+
+#gore{
+    min-height: 530px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+}
+
+#fletcher{
+    min-height: 530px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#wilder{
+    min-height: 530px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+}
+
+#clarke{
+    min-height: 560px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 200%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.zdjecie1{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    float: right;
+    margin: 15px;
+}
+
+.zdjecie{
+    float: left;
+    width: 50%;
+}
+
+.kontent{
+    float: left;
+    padding: 15px;
+    width: 50%;
+}
+
+h1{
+    font-variant: small-caps;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    text-align: center;
+}
+
+h2{
+    font-weight: bold;
+}
+
+.pogrubienie{
+    font-weight: bold;
+}
+
+footer{
+    font-size: 80%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    clear: both;
+    background: rgba(0, 0, 0, 0.89);
+    font-weight: bold;
+}
+
+
+
+
+
+@media only screen and (max-width: 1050px) {
+	header {
+		position: absolute;
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 6px;
+		background: #c5c5c5;
+        right: 0px;
+		top: 76px;
+		width: 100%;
+	}
+	nav:hover ul {
+		display: block;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding-bottom: 15px;
+		margin: 0;
+	}
+    #logo{
+        height: auto;
+        max-height: 73px;
+        width: auto;
+        max-width: 75%;
+        float: left;
+        margin-left: 10px;
+    }
+    body{
+        font-size: 13px;
+    }
+    #background{
+        background-image: url(img/tlo3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+    #nic{
+        width: 100%;
+        height: 90vh;    
+    }
+    .zdjecie{
+        width: 100%;
+    }
+    .zdjecie1{
+        height: 500px;
+        width: 500px;
+        margin: 0 auto;
+        float: none;
+    }
+    .kontent{
+        width: 100%;
+    }
+    #gahan{
+        text-align: center;
+    }
+    #gore{
+        text-align: center;
+    }
+    #fletcher{
+        height: 1450px;
+        text-align: center;
+    }
+    #wilder{
+        text-align: center;
+    }
+    #clarke{
+        height: 1290px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body{
+        font-size: 10px
+    }
+    .zdjecie1{
+        height: 250px;
+        width: 250px;
+        margin: 0 auto;
+        float: none;
+    }
+    #fletcher{
+        height: 400px;
+    }
+    #clarke{
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 482px) {
+    header{
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    body{
+        font-size: 9px;
+    }
+}

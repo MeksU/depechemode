@@ -1,0 +1,187 @@
+@font-face{
+    font-family: 'czcionka';
+    src: url(fonts/Typodermic%20-%20ChineseRocksRg-Regular.otf);
+}
+
+@font-face{
+    font-family: 'Montserrat-thin';
+    src: url(fonts/Montserrat-Thin.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(style/fonty/Montserrat-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Montserrat-thin', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+#background{
+    background-image: url(img/tlo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header{
+	background: black;
+	width: 100%;
+	height: 76px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 2px solid white;
+}
+
+#logo{
+    height: 73px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+    z-index: 0;
+}
+
+nav{
+    float: right;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+	float: left;
+}
+
+#menu-icon{
+	background: url(img/menu-icon.png) no-repeat center;
+	display: hidden;
+	width: 52px;
+	height: 75px;
+}
+
+.menu{
+    margin-right: 21px;
+    margin-top: 21px;
+    font-size: 27px;
+    display: inline-block;
+    color: white;
+    transition: 0.5s all;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'czcionka';
+    letter-spacing: 2px;
+}
+
+.menu:hover{
+    transform: scale(1.15, 1.15);
+    color: red;
+    transition: 0.5s all;
+}
+
+#nic{
+    width: 100%;
+    height: 93vh;    
+}
+
+#nic3{
+    width: 100%;
+    height: 20px;    
+}
+
+#glowna{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    min-height: 550px;
+    height: auto;
+    width: 100%;
+    background: rgba(130, 0, 0, 0.85);
+    font-size: 150%;
+    border-radius: 20px;
+}
+
+h1{
+    font-variant: small-caps;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    margin-bottom: 5px;
+}
+
+.ha1{
+    margin-top: 20px;
+}
+
+footer{
+    font-size: 80%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    clear: both;
+    background: rgba(0, 0, 0, 0.89);
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 970px) {
+	header {
+		position: absolute;
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 6px;
+		background: #c5c5c5;
+        right: 0px;
+		top: 76px;
+		width: 100%;
+	}
+	nav:hover ul {
+		display: block;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding-bottom: 15px;
+		margin: 0;
+	}
+    #logo{
+        height: auto;
+        max-height: 73px;
+        width: auto;
+        max-width: 75%;
+        float: left;
+        margin-left: 10px;
+    }
+    #nic{
+        width: 100%;
+        height: 90vh;    
+    }
+    #glowna{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
